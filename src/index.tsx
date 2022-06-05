@@ -47,7 +47,7 @@ const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
      */
     public static get observedAttributes(): string[] {
       const defaults = ["content-language", "widget-title", "on-card"];
-      return [...defaults];
+      return [...defaults,"title"];
     }
 
     /**
@@ -66,7 +66,7 @@ const factory: BlockFactory = (BaseBlockClass, _widgetApi) => {
 const blockDefinition: BlockDefinition = {
     name: "aa-widget",
     factory: factory,
-    attributes: [],
+    attributes: ["title"],
     blockLevel: 'block',
     configurationSchema: configurationSchema,
     uiSchema: uiSchema,

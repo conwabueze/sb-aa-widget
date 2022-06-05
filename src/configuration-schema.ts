@@ -19,7 +19,12 @@ import { JSONSchema7 } from "json-schema";
  * see https://react-jsonschema-form.readthedocs.io/en/latest/ for documentation
  */
 export const configurationSchema: JSONSchema7 = {
-  
+  properties: {
+      title: {
+          type: "string",
+          title: "string"
+      }
+  }
 };
 
 /**
@@ -27,5 +32,7 @@ export const configurationSchema: JSONSchema7 = {
  * @see https://react-jsonschema-form.readthedocs.io/en/latest/api-reference/uiSchema/
  */
 export const uiSchema: UiSchema = {
- 
+    title: {
+        "ui:help": "(Optional) Enter in Widget Title",
+      },
 };

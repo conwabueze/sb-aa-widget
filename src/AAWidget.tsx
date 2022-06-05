@@ -24,16 +24,17 @@ import { Error } from "./components/Error";
  * React Component
  */
 export interface AAWidgetProps extends BlockAttributes {
-
+  title: string
 }
 
-export const AAWidget = ({}: AAWidgetProps): ReactElement => {
-
+export const AAWidget = ({title}: AAWidgetProps): ReactElement => {
   return <div className="aa-widget">
+    <h1>{title != undefined ? title : ""}</h1>
+    <div>
     <a href="https://www.alaskasworld.com/news/IAmAlaska/tagboard.asp">See more #iamalaska posts</a>
     <div className="tagboard-embed" tgb-embed-id="1777"></div>
     <Helmet><script src="https://static.tagboard.com/embed/assets/js/embed.js"></script></Helmet>
-
+    </div>
 
   </div>
 };
