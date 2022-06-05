@@ -14,8 +14,6 @@
 import React, { ReactElement } from "react";
 import { BlockAttributes } from "widget-sdk";
 
-//https://www.npmjs.com/package/react-tradingview-embed
-import { SymbolInfo } from "react-tradingview-embed";
 import { Helmet } from "react-helmet";
 
 import { Error } from "./components/Error";
