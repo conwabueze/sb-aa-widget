@@ -27,7 +27,7 @@ export interface AAWidgetProps extends BlockAttributes {
 
 }
 
-export const AAWidget = ({ symbol, width, locale, theme }: AAWidgetProps): ReactElement => {
+export const AAWidget = ({}: AAWidgetProps): ReactElement => {
 
   return <div className="aa-widget">
     <a href="https://www.alaskasworld.com/news/IAmAlaska/tagboard.asp">See more #iamalaska posts</a>

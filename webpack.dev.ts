@@ -19,7 +19,7 @@ import "webpack-dev-server";
 
 const config: webpack.Configuration = merge(common, {
   entry: {
-    "conwabueze.custom-widget-tradingview-symbolinfo": "./src/dev.ts",
+    "conwabueze.aa-widget": "./src/dev.ts",
     config: "./dev/config.tsx",
     bootstrap: "./dev/bootstrap.ts",
   },

@@ -1,4 +1,4 @@
-# Custom Widget *Twitter Feed* for Staffbase Platform
+# Custom Widget *AA Widget* for Staffbase Platform
 
 ----
 
